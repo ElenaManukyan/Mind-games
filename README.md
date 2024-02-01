@@ -3,5 +3,5 @@
 
 <a href="https://codeclimate.com/github/SierraMoiseevna/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/6af649e830b701eac8da/maintainability" /></a>
 
-asciinema [https://asciinema.org/a/635698].
+asciinema: https://asciinema.org/a/635698.
 
