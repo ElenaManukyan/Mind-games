@@ -4,8 +4,9 @@ import { greeting, yourAnswer } from '../src/index.js';
 /* const min = 0;
 const max = 20; */
 
-const getRandomInt = (min, max) =>
-  Math.floor(Math.random() * (max - min) + min);
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
 
 const isEven = () => {
   // console.log('brain-even');
