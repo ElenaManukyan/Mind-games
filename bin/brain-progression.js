@@ -1,8 +1,4 @@
-import { yourAnswer, runGame } from '../src/index.js';
-
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
+import { yourAnswer, runGame, getRandomInt } from '../src/index.js';
 
 const progression = () => {
   const randomArrLength = getRandomInt(5, 11);
@@ -10,7 +6,6 @@ const progression = () => {
   let startValue = getRandomInt(0, 100);
   const progressionArr = [];
   const randomHiddenIndex = getRandomInt(0, randomArrLength);
-
   for (let i = 0; i < randomArrLength; i += 1) {
     progressionArr.push(startValue);
     startValue += randomStepProgression;
@@ -29,5 +24,5 @@ const progression = () => {
   }
   return true;
 };
-
-runGame(progression);
+const message = 'What number is missing in the progression?';
+runGame(progression, message);

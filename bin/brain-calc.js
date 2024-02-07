@@ -1,10 +1,6 @@
 // brain-calc
 
-import { yourAnswer, runGame } from '../src/index.js';
-
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
+import { yourAnswer, runGame, getRandomInt } from '../src/index.js';
 
 // const name = greeting();
 
@@ -58,5 +54,5 @@ const calculator = () => {
   }
   return true;
 };
-
-runGame(calculator);
+const message = 'What is the result of the expression?';
+runGame(calculator, message);

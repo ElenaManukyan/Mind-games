@@ -1,14 +1,9 @@
 // brain-gcd
-import { yourAnswer, runGame } from '../src/index.js';
-
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
+import { yourAnswer, runGame, getRandomInt } from '../src/index.js';
 
 const largestCommonDivisor = () => {
   let num1 = getRandomInt(0, 100);
   let num2 = getRandomInt(0, 100);
-  console.log('Find the greatest common divisor of given numbers.');
   console.log(`Question: ${num1} ${num2}`);
   const answer = Number(yourAnswer());
   while (num1 !== 0 && num2 !== 0) {
@@ -29,5 +24,5 @@ const largestCommonDivisor = () => {
   }
   return true;
 };
-
-runGame(largestCommonDivisor);
+const message = 'Find the greatest common divisor of given numbers.';
+runGame(largestCommonDivisor, message);

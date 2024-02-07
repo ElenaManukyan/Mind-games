@@ -7,13 +7,18 @@ const greeting = () => {
   return name;
 };
 
+const printMessage = (message) => {
+  console.log(message);
+};
+
 const yourAnswer = () => {
   const answer = readlineSync.question('Your answer: ');
   return answer;
 };
 
-const runGame = (func) => {
+const runGame = (func, message) => {
   const name = greeting();
+  printMessage(message);
   let i = 0;
   while (i < 3) {
     const res = func();
@@ -28,4 +33,10 @@ const runGame = (func) => {
   }
 };
 
-export { greeting, yourAnswer, runGame };
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+// prettier-ignore
+export {
+  greeting, yourAnswer, runGame, printMessage, getRandomInt,
+};
