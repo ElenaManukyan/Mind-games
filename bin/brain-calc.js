@@ -11,44 +11,29 @@ const calculator = () => {
 
   console.log(`Question: ${num1} ${randomOperator} ${num2}`);
   const answer = Number(yourAnswer());
+  let correct = 0;
   switch (randomOperator) {
     case '+': {
-      const correct = num1 + num2;
-      if (answer === correct) {
-        console.log('Correct!');
-      } else {
-        console.log(
-          `'${answer}' is wrong answer ;(. Correct answer was '${correct}'.`,
-        );
-        return false;
-      }
+      correct = num1 + num2;
       break;
     }
     case '-': {
-      const correct = num1 - num2;
-      if (answer === correct) {
-        console.log('Correct!');
-      } else {
-        console.log(
-          `'${answer}' is wrong answer ;(. Correct answer was '${correct}'.`,
-        );
-        return false;
-      }
+      correct = num1 - num2;
       break;
     }
     case '*': {
-      const correct = num1 * num2;
-      if (answer === correct) {
-        console.log('Correct!');
-      } else {
-        console.log(
-          `'${answer}' is wrong answer ;(. Correct answer was '${correct}'.`,
-        );
-        return false;
-      }
+      correct = num1 * num2;
       break;
     }
     default:
+  }
+  if (answer === correct) {
+    console.log('Correct!');
+  } else {
+    console.log(
+      `'${answer}' is wrong answer ;(. Correct answer was '${correct}'.`,
+    );
+    return false;
   }
   return true;
 };
