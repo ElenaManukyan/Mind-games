@@ -1,4 +1,9 @@
-import { yourAnswer, runGame, getRandomInt } from '../src/index.js';
+import {
+  yourAnswer,
+  runGame,
+  getRandomInt,
+  checkCorrect,
+} from '../src/index.js';
 
 const isPrimeNumber = () => {
   const number = getRandomInt(2, 100);
@@ -13,15 +18,7 @@ const isPrimeNumber = () => {
       correctAnswer = 'yes';
     }
   }
-  if (answer === correctAnswer) {
-    console.log('Correct!');
-  } else {
-    console.log(
-      `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`,
-    );
-    return false;
-  }
-  return true;
+  return checkCorrect(answer, correctAnswer);
 };
 const message = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 runGame(isPrimeNumber, message);

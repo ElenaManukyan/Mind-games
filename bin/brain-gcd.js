@@ -1,5 +1,10 @@
 // brain-gcd
-import { yourAnswer, runGame, getRandomInt } from '../src/index.js';
+import {
+  yourAnswer,
+  runGame,
+  getRandomInt,
+  checkCorrect,
+} from '../src/index.js';
 
 const largestCommonDivisor = () => {
   let num1 = getRandomInt(0, 100);
@@ -14,15 +19,7 @@ const largestCommonDivisor = () => {
     }
   }
   const correctAnswer = num1 + num2;
-  if (answer === correctAnswer) {
-    console.log('Correct!');
-  } else {
-    console.log(
-      `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
-    );
-    return false;
-  }
-  return true;
+  return checkCorrect(answer, correctAnswer);
 };
 const message = 'Find the greatest common divisor of given numbers.';
 runGame(largestCommonDivisor, message);

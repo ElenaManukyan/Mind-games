@@ -1,4 +1,9 @@
-import { yourAnswer, runGame, getRandomInt } from '../src/index.js';
+import {
+  yourAnswer,
+  runGame,
+  getRandomInt,
+  checkCorrect,
+} from '../src/index.js';
 
 const progression = () => {
   const randomArrLength = getRandomInt(5, 11);
@@ -14,15 +19,7 @@ const progression = () => {
   console.log(`Question: ${progressionArr.join(' ')}`);
   const answer = Number(yourAnswer());
   const correctAnswer = Number(removed);
-  if (answer === correctAnswer) {
-    console.log('Correct!');
-  } else {
-    console.log(
-      `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`,
-    );
-    return false;
-  }
-  return true;
+  return checkCorrect(answer, correctAnswer);
 };
 const message = 'What number is missing in the progression?';
 runGame(progression, message);

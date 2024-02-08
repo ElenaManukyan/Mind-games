@@ -36,7 +36,19 @@ const runGame = (func, message) => {
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
+
+// eslint-disable-next-line consistent-return
+function checkCorrect(answer, correctAnswer) {
+  if (answer === correctAnswer) {
+    console.log('Correct!');
+  } else {
+    console.log(
+      `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`,
+    );
+    return false;
+  }
+}
 // prettier-ignore
 export {
-  greeting, yourAnswer, runGame, printMessage, getRandomInt,
+  greeting, yourAnswer, runGame, printMessage, getRandomInt, checkCorrect,
 };
