@@ -29,7 +29,7 @@ const runGame = (func, message) => {
     i += 1;
   }
   if (i === 3) {
-    console.log(`Congratulations, ${name}`);
+    console.log(`Congratulations, ${name}!`);
   }
 };
 
