@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // brain-calc
 
 import {
