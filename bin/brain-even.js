@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { yourAnswer, runGame, getRandomInt } from '../src/index.js';
 
 const isEven = () => {
