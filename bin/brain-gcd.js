@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// brain-gcd
+
 import {
   yourAnswer,
   runGame,

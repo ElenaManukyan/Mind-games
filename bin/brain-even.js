@@ -2,7 +2,7 @@
 import { yourAnswer, runGame, getRandomInt } from '../src/index.js';
 
 const isEven = () => {
-  const number = getRandomInt(0, 20); // Тут генерируется число от 0 до 1
+  const number = getRandomInt(0, 20);
   console.log(`Question: ${number}`);
   const answer = yourAnswer();
 
