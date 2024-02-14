@@ -1,4 +1,4 @@
-### Hexlet tests and linter status:
+## Hexlet tests and linter status:
 [![Actions Status](https://github.com/SierraMoiseevna/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SierraMoiseevna/frontend-project-44/actions)
 
 <a href="https://codeclimate.com/github/SierraMoiseevna/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/6af649e830b701eac8da/maintainability" /></a>
@@ -10,28 +10,28 @@ Installation:
 1) `git clone https://github.com/SierraMoiseevna/frontend-project-44.git`
 2) `make install`
 
-# Game: "Parity check"
+## Game: "Parity check"
 A random number is shown to the user.
 The user enters the answer into the console: "yes" if the number is even,
 or "no" if it is odd
 Game start: make brain-even
 Demonstration of the work: <script async id="asciicast-635698" src="https://asciinema.org/a/635698.js "></script>
 
-# Game: "Calculator"
+## Game: "Calculator"
 The user is shown a random mathematical
 expression, for example 35 + 16. The user calculates and records
 the correct answer is in  console.
 Game Launch: make brain-calc
 Demonstration of the work: <script async id="asciicast-636163" src="https://asciinema.org/a/636163 .js"></script>
 
-# The Greatest Common Divisor game
+## The Greatest Common Divisor game
 The user is shown two random numbers,
 for example, 25 50. The user calculates and
 enters the greatest common divisor of these numbers into the console.
 Game Launch: make brain-gcd
 Demonstration of the work: <script async id="asciicast-636232" src="https://asciinema.org/a/636232 .js"></script>
 
-# The game "Arithmetic Progression"
+## The game "Arithmetic Progression"
 shows the user a series of numbers forming an arithmetic
 a progression, any of the numbers is replaced by two dots.
 The user determines this number and writes the response to 
@@ -40,7 +40,7 @@ Game Launch: make brain-progression
 Demonstration of the work: <script async id="asciicast-636250" src="https://asciinema.org/a/636250 .js"></script>
 
 
-# The game "Is it a prime number?"
+## The game "Is it a prime number?"
 A random number is shown to the user. The user
 answers "yes" if the number is prime, or "no" if
 the number is not prime.
