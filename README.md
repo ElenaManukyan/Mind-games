@@ -24,14 +24,14 @@ the correct answer is in  console.
 Game Launch: make brain-calc
 Demonstration of the work: <script async id="asciicast-636163" src="https://asciinema.org/a/636163 .js"></script>
 
-## The Greatest Common Divisor game
+## Game "Greatest Common Divisor" 
 The user is shown two random numbers,
 for example, 25 50. The user calculates and
 enters the greatest common divisor of these numbers into the console.
 Game Launch: make brain-gcd
 Demonstration of the work: <script async id="asciicast-636232" src="https://asciinema.org/a/636232 .js"></script>
 
-## The game "Arithmetic Progression"
+## Game "Arithmetic Progression"
 shows the user a series of numbers forming an arithmetic
 a progression, any of the numbers is replaced by two dots.
 The user determines this number and writes the response to 
@@ -40,7 +40,7 @@ Game Launch: make brain-progression
 Demonstration of the work: <script async id="asciicast-636250" src="https://asciinema.org/a/636250 .js"></script>
 
 
-## The game "Is it a prime number?"
+## Game "Is it a prime number?"
 A random number is shown to the user. The user
 answers "yes" if the number is prime, or "no" if
 the number is not prime.
