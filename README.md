@@ -15,7 +15,7 @@ A random number is shown to the user.
 The user enters the answer into the console: "yes" if the number is even,
 or "no" if it is odd.  
 Game start: `make brain-even`
-### Demonstration: 
+#### Demonstration: 
 <a href="https://asciinema.org/a/635698" target="_blank"><img src="https://asciinema.org/a/635698.svg" /></a>
 
 ## Game: "Calculator"
@@ -23,7 +23,7 @@ The user is shown a random mathematical
 expression, for example 35 + 16. The user calculates and records
 the correct answer is in  console.  
 Game start: `make brain-calc`
-### Demonstration: 
+#### Demonstration: 
 <a href="https://asciinema.org/a/636163" target="_blank"><img src="https://asciinema.org/a/636163.svg" /></a>
 
 ## Game "Greatest Common Divisor" 
@@ -31,7 +31,7 @@ The user is shown two random numbers,
 for example, 25 50. The user calculates and
 enters the greatest common divisor of these numbers into the console.  
 Game start: `make brain-gcd`
-### Demonstration: 
+#### Demonstration: 
 <a href="https://asciinema.org/a/636232" target="_blank"><img src="https://asciinema.org/a/636232.svg" /></a>
 
 ## Game "Arithmetic Progression"
@@ -39,7 +39,7 @@ shows the user a series of numbers forming an arithmetic
 a progression, any of the numbers is replaced by two dots.
 The user determines this number and writes the response to console.  
 Game start: `make brain-progression`
-### Demonstration: 
+#### Demonstration: 
 <a href="https://asciinema.org/a/636250" target="_blank"><img src="https://asciinema.org/a/636250.svg" /></a>
 
 
@@ -48,5 +48,5 @@ A random number is shown to the user. The user
 answers "yes" if the number is prime, or "no" if
 the number is not prime.  
 Game start: `make brain-prime`
-### Demonstration: 
+#### Demonstration: 
 <a href="https://asciinema.org/a/0A1eVHAXCze9Y9ZcqNhMenLrH" target="_blank"><img src="https://asciinema.org/a/0A1eVHAXCze9Y9ZcqNhMenLrH.svg" /></a>
