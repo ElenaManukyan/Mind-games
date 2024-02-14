@@ -16,7 +16,6 @@ The user enters the answer into the console: "yes" if the number is even,
 or "no" if it is odd
 Game start: make brain-even
 Demonstration of the work: 
-<kbd>CTRL</kbd> + <kbd>P</kbd>
 <script async id="asciicast-635698" src="https://asciinema.org/a/635698.js "></script>
 
 ## Game: "Calculator"
