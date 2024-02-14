@@ -37,7 +37,6 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-// eslint-disable-next-line consistent-return
 function checkCorrect(answer, correctAnswer) {
   if (answer === correctAnswer) {
     console.log('Correct!');
@@ -47,8 +46,14 @@ function checkCorrect(answer, correctAnswer) {
     );
     return false;
   }
+  return true;
 }
-// prettier-ignore
+
 export {
-  greeting, yourAnswer, runGame, printMessage, getRandomInt, checkCorrect,
+  greeting,
+  yourAnswer,
+  runGame,
+  printMessage,
+  getRandomInt,
+  checkCorrect,
 };
