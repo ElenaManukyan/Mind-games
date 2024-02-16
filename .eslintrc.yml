@@ -13,4 +13,13 @@ rules:
     - ignorePackages
     - js: always
   no-underscore-dangle: [2, { 'allow': ['__filename', '__dirname'] }]
-  'object-curly-newline': 'off',
+  'object-curly-newline':
+    [
+      'error',
+      {
+        'ObjectExpression': { 'consistent': true, 'multiline': true },
+        'ObjectPattern': { 'consistent': true, 'multiline': true },
+        'ImportDeclaration': 'never',
+        'ExportDeclaration': { 'multiline': true, 'minProperties': 3 },
+      },
+    ]

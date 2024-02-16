@@ -43,4 +43,6 @@ function checkCorrect(answer, correctAnswer) {
   return true;
 }
 
-export { greeting, yourAnswer, runGame, printMessage, checkCorrect };
+export {
+  greeting, yourAnswer, runGame, printMessage, checkCorrect,
+};
