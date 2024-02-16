@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import { yourAnswer, getRandomInt } from './index.js';
+import { yourAnswer } from './index.js';
+import getRandomInt from './utils.js';
 
 const isEven = () => {
   const number = getRandomInt(0, 20);

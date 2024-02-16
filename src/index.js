@@ -33,27 +33,14 @@ const runGame = (func, message) => {
   }
 };
 
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
-
 function checkCorrect(answer, correctAnswer) {
   if (answer === correctAnswer) {
     console.log('Correct!');
   } else {
-    console.log(
-      `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`,
-    );
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
     return false;
   }
   return true;
 }
 
-export {
-  greeting,
-  yourAnswer,
-  runGame,
-  printMessage,
-  getRandomInt,
-  checkCorrect,
-};
+export { greeting, yourAnswer, runGame, printMessage, checkCorrect };

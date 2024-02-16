@@ -1,4 +1,5 @@
-import { yourAnswer, getRandomInt, checkCorrect } from './index.js';
+import { yourAnswer, checkCorrect } from './index.js';
+import getRandomInt from './utils.js';
 
 const calculator = () => {
   const operators = ['+', '-', '*'];
