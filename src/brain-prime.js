@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-import { yourAnswer, checkCorrect } from './index.js';
 import getRandomInt from './utils.js';
 
 const isPrimeNumber = () => {
   const number = getRandomInt(2, 100);
-  console.log(`Question: ${number}`);
-  const answer = yourAnswer();
+  const question = `Question: ${number}`;
+  const result = [];
+  result.push(question);
   let correctAnswer = '';
   for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
@@ -15,7 +15,8 @@ const isPrimeNumber = () => {
       correctAnswer = 'yes';
     }
   }
-  return checkCorrect(answer, correctAnswer);
+  result.push(correctAnswer);
+  return result;
 };
 const message = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

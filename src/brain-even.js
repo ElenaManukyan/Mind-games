@@ -1,27 +1,20 @@
 #!/usr/bin/env node
-import { yourAnswer } from './index.js';
 import getRandomInt from './utils.js';
 
 const isEven = () => {
   const number = getRandomInt(0, 20);
-  console.log(`Question: ${number}`);
-  const answer = yourAnswer();
+  const question = `Question: ${number}`;
+  const result = [];
+  result.push(question);
+  let correctAnswer = '';
 
-  if (number % 2 === 0 && answer === 'yes') {
-    console.log('Correct!');
-  } else if (number % 2 !== 0 && answer === 'no') {
-    console.log('Correct!');
+  if (number % 2 === 0) {
+    correctAnswer = 'yes';
   } else {
-    let correctAnswer = '';
-    if (answer === 'yes') {
-      correctAnswer = 'no';
-    } else {
-      correctAnswer = 'yes';
-    }
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-    return false;
+    correctAnswer = 'no';
   }
-  return true;
+  result.push(correctAnswer);
+  return result;
 };
 
 const message = 'Answer "yes" if the number is even, otherwise answer "no".';

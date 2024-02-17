@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { yourAnswer, checkCorrect } from './index.js';
 import getRandomInt from './utils.js';
 
 const progression = () => {
@@ -13,10 +12,12 @@ const progression = () => {
     startValue += randomStepProgression;
   }
   const removed = progressionArr.splice(randomHiddenIndex, 1, '..');
-  console.log(`Question: ${progressionArr.join(' ')}`);
-  const answer = Number(yourAnswer());
-  const correctAnswer = Number(removed);
-  return checkCorrect(answer, correctAnswer);
+  const question = `Question: ${progressionArr.join(' ')}`;
+  const result = [];
+  result.push(question);
+  const correctAnswer = String(removed);
+  result.push(correctAnswer);
+  return result;
 };
 const message = 'What number is missing in the progression?';
 
