@@ -4,7 +4,7 @@
 <a href="https://codeclimate.com/github/SierraMoiseevna/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/6af649e830b701eac8da/maintainability" /></a>
 
 # Description:
-This repository contains 5 mini-games that you can be run in the console (Ubuntu).
+This repository contains 5 mini-games that you can run in the console (Ubuntu).
 
 ## Installation: 
 1) `git clone https://github.com/SierraMoiseevna/frontend-project-44.git`
