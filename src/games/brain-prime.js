@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import getRandomInt from './utils.js';
+import getRandomInt from '../utils.js';
 
 const isPrimeNumber = () => {
   const number = getRandomInt(2, 100);

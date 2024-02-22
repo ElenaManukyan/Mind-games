@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import getRandomInt from './utils.js';
+import getRandomInt from '../utils.js';
 
 const isEven = () => {
   const number = getRandomInt(0, 20);

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import getRandomInt from './utils.js';
+import getRandomInt from '../utils.js';
 
 const progression = () => {
   const randomArrLength = getRandomInt(5, 11);

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import getRandomInt from './utils.js';
+import getRandomInt from '../utils.js';
 
 const largestCommonDivisor = () => {
   let num1 = getRandomInt(0, 100);
