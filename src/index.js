@@ -7,7 +7,7 @@ const runGame = (func, message) => {
   console.log(message);
   for (let i = 0; i < 3; i += 1) {
     const res = func();
-    const question = res[0];
+    const [question] = res;
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
     if (answer === res[1]) {
