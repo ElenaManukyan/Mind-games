@@ -4,7 +4,7 @@ const calculator = () => {
   const operators = ['+', '-', '*'];
   const num1 = getRandomInt(0, 10);
   const num2 = getRandomInt(0, 10);
-  const randomOperator = operators[Math.floor(Math.random() * operators.length)];
+  const randomOperator = operators[getRandomInt(0, operators.length)];
   const question = `Question: ${num1} ${randomOperator} ${num2}`;
   let correctAnswer = 0;
   const result = [];
