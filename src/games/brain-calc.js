@@ -24,8 +24,7 @@ const calculator = () => {
     }
     default:
   }
-  result.push(String(correctAnswer));
-  return result;
+  return [question, String(correctAnswer)];
 };
 const message = 'What is the result of the expression?';
 
