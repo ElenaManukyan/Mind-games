@@ -7,12 +7,7 @@ const isEven = () => {
   const result = [];
   result.push(question);
   let correctAnswer = '';
-
-  if (number % 2 === 0) {
-    correctAnswer = 'yes';
-  } else {
-    correctAnswer = 'no';
-  }
+  correctAnswer = number % 2 === 0 ? 'yes' : 'no';
   result.push(correctAnswer);
   return result;
 };
