@@ -19,10 +19,7 @@ const largestCommonDivisor = () => {
   const num1 = getRandomInt(0, 100);
   const num2 = getRandomInt(0, 100);
   const question = `Question: ${num1} ${num2}`;
-  // const result = [];
-  // result.push(question);
   const correctAnswer = calcLargestCommonDivisor(num1, num2);
-  // result.push(String(correctAnswer));
   return [question, String(correctAnswer)];
 };
 const message = 'Find the greatest common divisor of given numbers.';

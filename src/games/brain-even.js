@@ -1,15 +1,12 @@
 #!/usr/bin/env node
 import getRandomInt from '../utils.js';
 
-const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
+const isEven = (num) => (num % 2 === 0 ? !!'yes' : !!'');
 
 const evenNumber = () => {
   const number = getRandomInt(0, 20);
   const question = `Question: ${number}`;
-  // const result = [];
-  // result.push(question);
-  const correctAnswer = isEven(number);
-  // result.push(correctAnswer);
+  const correctAnswer = (isEven(number) === true) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
