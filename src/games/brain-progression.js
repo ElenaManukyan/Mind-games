@@ -7,15 +7,21 @@ const hiddenNumber = (progression) => {
   return sequence.splice(randomHiddenIndex, 1, '..');
 };
 
+const createProgression = (firstValue, countElements, step) => {
+  const progressionArr = [];
+  let startVal = firstValue;
+  for (let i = 0; i < countElements; i += 1) {
+    progressionArr.push(startVal);
+    startVal += step;
+  }
+  return progressionArr;
+};
+
 const progression = () => {
   const randomArrLength = getRandomInt(5, 11);
   const randomStepProgression = getRandomInt(0, 10);
-  let startValue = getRandomInt(0, 100);
-  const progressionArr = [];
-  for (let i = 0; i < randomArrLength; i += 1) {
-    progressionArr.push(startValue);
-    startValue += randomStepProgression;
-  }
+  const startValue = getRandomInt(0, 100);
+  const progressionArr = createProgression(startValue, randomArrLength, randomStepProgression);
   const hiddenElement = hiddenNumber(progressionArr);
   const question = `Question: ${progressionArr.join(' ')}`;
   const correctAnswer = String(hiddenElement);
