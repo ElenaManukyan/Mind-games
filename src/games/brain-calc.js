@@ -1,23 +1,19 @@
 import getRandomInt from '../utils.js';
 
 const calculate = (num1, num2, operator) => {
-  let correctAnswer = 0;
   switch (operator) {
     case '+': {
-      correctAnswer = num1 + num2;
-      break;
+      return num1 + num2;
     }
     case '-': {
-      correctAnswer = num1 - num2;
-      break;
+      return num1 - num2;
     }
     case '*': {
-      correctAnswer = num1 * num2;
-      break;
+      return num1 * num2;
     }
     default:
+      throw new Error(`Operator ${operator} doesn't exist`);
   }
-  return String(correctAnswer);
 };
 
 const calculator = () => {
@@ -28,7 +24,7 @@ const calculator = () => {
   const question = `Question: ${num1} ${randomOperator} ${num2}`;
   const result = [];
   result.push(question);
-  return [question, calculate(num1, num2, randomOperator)];
+  return [question, String(calculate(num1, num2, randomOperator))];
 };
 const message = 'What is the result of the expression?';
 
