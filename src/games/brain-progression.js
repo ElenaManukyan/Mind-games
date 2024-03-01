@@ -18,11 +18,8 @@ const progression = () => {
   }
   const hiddenElement = hiddenNumber(progressionArr);
   const question = `Question: ${progressionArr.join(' ')}`;
-  const result = [];
-  result.push(question);
   const correctAnswer = String(hiddenElement);
-  result.push(correctAnswer);
-  return result;
+  return [question, correctAnswer];
 };
 const message = 'What number is missing in the progression?';
 
