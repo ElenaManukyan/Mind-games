@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import getRandomInt from '../utils.js';
 
 const isEven = (num) => (num % 2 === 0 ? !!'yes' : !!'');

@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import getRandomInt from '../utils.js';
 
 const calcLargestCommonDivisor = (num1, num2) => {
