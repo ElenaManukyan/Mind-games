@@ -1,5 +1,7 @@
 import getRandomInt from '../utils.js';
 
+const operators = ['+', '-', '*'];
+
 const calculate = (num1, num2, operator) => {
   switch (operator) {
     case '+': {
@@ -17,7 +19,6 @@ const calculate = (num1, num2, operator) => {
 };
 
 const calculator = () => {
-  const operators = ['+', '-', '*'];
   const num1 = getRandomInt(0, 10);
   const num2 = getRandomInt(0, 10);
   const randomOperator = operators[getRandomInt(0, operators.length)];
