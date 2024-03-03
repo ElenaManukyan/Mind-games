@@ -1,11 +1,5 @@
 import getRandomInt from '../utils.js';
 
-const hiddenNumber = (progression) => {
-  const sequence = progression;
-  const randomHiddenIndex = getRandomInt(0, sequence.length);
-  return sequence.splice(randomHiddenIndex, 1, '..');
-};
-
 const createProgression = (firstValue, countElements, step) => {
   const progressionArr = [];
   let startVal = firstValue;
@@ -21,7 +15,8 @@ const progression = () => {
   const randomStepProgression = getRandomInt(0, 10);
   const startValue = getRandomInt(0, 100);
   const progressionArr = createProgression(startValue, randomArrLength, randomStepProgression);
-  const hiddenElement = hiddenNumber(progressionArr);
+  const randomHiddenIndex = getRandomInt(0, progressionArr.length);
+  const hiddenElement = progressionArr.splice(randomHiddenIndex, 1, '..');
   const question = `Question: ${progressionArr.join(' ')}`;
   const correctAnswer = String(hiddenElement);
   return [question, correctAnswer];
