@@ -8,7 +8,7 @@ This repository contains 5 mini-games that you can run in the console (Ubuntu + 
 
 ## Installation: 
 1) `git clone https://github.com/SierraMoiseevna/frontend-project-44.git`
-2) `make install`
+2) `make install`  
 Probably to run games you need to install Node.js. In Ubuntu it's done as follows:
 1) `sudo apt update`
 2) `sudo apt install nodejs`
