@@ -5,7 +5,7 @@ const isEven = (num) => !(num % 2);
 const evenNumber = () => {
   const number = getRandomInt(0, 20);
   const question = `Question: ${number}`;
-  const correctAnswer = (isEven(number) === true) ? 'yes' : 'no';
+  const correctAnswer = (isEven(number)) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
