@@ -1,6 +1,6 @@
 import getRandomInt from '../utils.js';
 
-const isEven = (num) => (num % 2 === 0 ? !!'yes' : !!'');
+const isEven = (num) => !(num % 2);
 
 const evenNumber = () => {
   const number = getRandomInt(0, 20);
