@@ -4,11 +4,14 @@
 <a href="https://codeclimate.com/github/SierraMoiseevna/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/6af649e830b701eac8da/maintainability" /></a>
 
 # Description:
-This repository contains 5 mini-games that you can run in the console (Ubuntu).
+This repository contains 5 mini-games that you can run in the console (Ubuntu + Node.js).
 
 ## Installation: 
 1) `git clone https://github.com/SierraMoiseevna/frontend-project-44.git`
 2) `make install`
+Probably to run games you need to install Node.js. In Ubuntu it's done as follows:
+1) `sudo apt update`
+2) `sudo apt install nodejs`
 
 ## Game: "Parity check"
 A random number is shown to user.
