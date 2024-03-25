@@ -7,13 +7,13 @@ const hiddenNumber = (progression) => {
 };
 
 const createProgression = (firstValue, countElements, step) => {
-  const progressionArr = [];
+  const progression = [];
   let startVal = firstValue;
   for (let i = 0; i < countElements; i += 1) {
-    progressionArr.push(startVal);
+    progression.push(startVal);
     startVal += step;
   }
-  return progressionArr;
+  return progression;
 };
 
 const progression = () => {
