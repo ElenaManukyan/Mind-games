@@ -2,10 +2,6 @@
 [![Actions Status](https://github.com/SierraMoiseevna/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SierraMoiseevna/frontend-project-44/actions)
 
 <a href="https://codeclimate.com/github/SierraMoiseevna/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/6af649e830b701eac8da/maintainability" /></a>
-## Installation:
-`make install`
-## How to run the Eslint:
-`make lint`
 # Description:
 This repository contains 5 mini-games that you can run in the console (Ubuntu + Node.js).
 
@@ -16,6 +12,9 @@ This repository contains 5 mini-games that you can run in the console (Ubuntu + 
 Probably to run games you need to install Node.js. In Ubuntu it's done as follows:
 1) `sudo apt update`
 2) `sudo apt install nodejs`
+
+## How to run the Eslint:
+`make lint`
 
 ## Game: "Parity check"
 A random number is shown to user.
