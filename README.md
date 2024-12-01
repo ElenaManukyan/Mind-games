@@ -1,17 +1,35 @@
-## Tests and Code climate status:
+## Tests and code analysis:
 [![Actions Status](https://github.com/SierraMoiseevna/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SierraMoiseevna/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/SierraMoiseevna/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/6af649e830b701eac8da/maintainability" /></a>
-# Description:
-This repository contains 5 mini-games that you can run in the console (Ubuntu + Node.js).
 
-## Installation: 
-1) `git clone https://github.com/SierraMoiseevna/frontend-project-44.git`
-2) `make install`
+# Brain Games
 
-Probably to run games you need to install Node.js. In Ubuntu it's done as follows:
-1) `sudo apt update`
-2) `sudo apt install nodejs`
+**Brain Games** is a set of five console games designed to train your brain. Each game presents questions that you need to answer correctly. After three correct answers, the game is considered completed. A wrong answer ends the game and offers to start again.
 
+## Games
+
+1. **Calculator**: Solve basic arithmetic expressions.
+2. **Progression**: Find the missing number in a sequence.
+3. **Even or Odd**: Determine whether a number is even.
+4. **Greatest Common Divisor**: Find the GCD of two numbers.
+5. **Prime Number**: Check if a number is prime.
+
+---
+
+## Installation
+
+1. Make sure you have Node.js version 14 or higher installed.
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/ElenaManukyan/Mind-games.git
+3. Navigate to the project directory:
+   ``` bash
+   cd Mind-games
+4. Install dependencies:
+   ``` bash
+   npm install
+
+/////////////
 ## How to run the Eslint:
 `make lint`
 
