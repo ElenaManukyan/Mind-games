@@ -32,7 +32,8 @@
 ## Linting
 The project uses ESLint with Airbnb's configuration. To check code for compliance with coding standards, run:
 ```bash
-npx eslint .```
+npx eslint .
+```
 
 ## Usage
 Games can be launched from the terminal.
