@@ -32,13 +32,13 @@ npx eslint .  # Runs Airbnb style guide check
 ```  
 # 🕹️ How to Play
 
-| Game          | Command            | Description                          |
-|---------------|--------------------|--------------------------------------|
-| Even Check    | `brain-even`       | Determine if number is even          |
-| Calculator    | `brain-calc`       | Solve math expressions               |
-| GCD           | `brain-gcd`        | Find greatest common divisor         |
-| Progression   | `brain-progression`| Complete the sequence                |
-| Prime         | `brain-prime`      | Check for prime numbers              |
+| Game          | Command                 | Description                       |
+|---------------|-------------------------|--------------------------------------|
+| Even Check    | `make brain-even`       | Determine if number is even       |
+| Calculator    | `make brain-calc`       | Solve math expressions            |
+| GCD           | `make brain-gcd`        | Find greatest common divisor      |
+| Progression   | `make brain-progression`| Complete the sequence             |
+| Prime         | `make brain-prime`      | Check for prime numbers           |
 
 ## 🎥 Demonstrations
 
