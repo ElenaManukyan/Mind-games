@@ -1,80 +1,65 @@
-# Brain Games
+# Brain Games 🧠🎮
 
-## Tests and code analysis:
-[![Actions Status](https://github.com/SierraMoiseevna/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SierraMoiseevna/frontend-project-44/actions)
-<a href="https://codeclimate.com/github/SierraMoiseevna/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/6af649e830b701eac8da/maintainability" /></a>
+[![CI Status](https://github.com/SierraMoiseevna/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SierraMoiseevna/frontend-project-44/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6af649e830b701eac8da/maintainability)](https://codeclimate.com/github/SierraMoiseevna/frontend-project-44/maintainability)
 
-**Brain Games** is a set of five console games designed to train your brain. Each game presents questions that you need to answer correctly. After three correct answers, the game is considered completed. A wrong answer ends the game and offers to start again.
+A collection of five console math games to train your brain. Each game presents questions that need to be answered correctly. Three correct answers win the game, while a wrong answer ends it.
 
-## Games
+## 🎮 Available Games
 
-1. **Calculator**: Solve basic arithmetic expressions.
-2. **Progression**: Find the missing number in a sequence.
-3. **Even or Odd**: Determine whether a number is even.
-4. **Greatest Common Divisor**: Find the GCD of two numbers.
-5. **Prime Number**: Check if a number is prime.
+1. **Calculator** - Solve arithmetic expressions
+2. **Progression** - Find the missing number in a sequence
+3. **Even or Odd** - Determine number parity
+4. **Greatest Common Divisor** - Find GCD of two numbers
+5. **Prime Number** - Check if number is prime
 
----
+## ⚙️ Installation
 
-## Installation
+### Prerequisites
+- Node.js v14+
 
-1. Make sure you have Node.js version 14 or higher installed.
-2. Clone the repository:
-   ```bash
-   git clone https://github.com/ElenaManukyan/Mind-games.git
-3. Navigate to the project directory:
-   ``` bash
-   cd Mind-games
-4. Install dependencies:
-   ``` bash
-   npm install
-
-## Linting
-The project uses ESLint with Airbnb's configuration. To check code for compliance with coding standards, run:
+### Setup
 ```bash
-npx eslint .
+git clone https://github.com/ElenaManukyan/Mind-games.git
+cd Mind-games
+npm install
 ```
+## 🔍 Code Quality
 
-## Usage
-Games can be launched from the terminal.
+```bash
+npx eslint .  # Runs Airbnb style guide check
+```  
+# 🕹️ How to Play
 
-### Game: "Parity check"
-A random number is shown to user.
-User enters the answer into the console: "yes" if the number is even,
-or "no" if it is odd.  
-Game start: ```make brain-even```
-#### Demonstration: 
-<a href="https://asciinema.org/a/635698" target="_blank"><img src="https://asciinema.org/a/635698.svg" /></a>
+| Game          | Command            | Description                          |
+|---------------|--------------------|--------------------------------------|
+| Even Check    | `brain-even`       | Determine if number is even          |
+| Calculator    | `brain-calc`       | Solve math expressions               |
+| GCD           | `brain-gcd`        | Find greatest common divisor         |
+| Progression   | `brain-progression`| Complete the sequence                |
+| Prime         | `brain-prime`      | Check for prime numbers              |
 
-### Game: "Calculator"
-User is shown a random mathematical
-expression, for example 35 + 16. User calculates and records
-the correct answer is in  console.  
-Game start: ```make brain-calc```
-#### Demonstration: 
-<a href="https://asciinema.org/a/636163" target="_blank"><img src="https://asciinema.org/a/636163.svg" /></a>
+## 🎥 Demonstrations
 
-### Game "Greatest Common Divisor" 
-User is shown two random numbers,
-for example, 25 50. User calculates and
-enters the greatest common divisor of these numbers into the console.  
-Game start: ```make brain-gcd```
-#### Demonstration: 
-<a href="https://asciinema.org/a/636232" target="_blank"><img src="https://asciinema.org/a/636232.svg" /></a>
+### Even Check
+[![Even Check Demo](https://asciinema.org/a/635698.svg)](https://asciinema.org/a/635698)
 
-### Game "Arithmetic Progression"
-Shows user a series of numbers forming an arithmetic
-a progression, any of the numbers is replaced by two dots.
-User determines this number and writes the response to console.  
-Game start: ```make brain-progression```
-#### Demonstration: 
-<a href="https://asciinema.org/a/636250" target="_blank"><img src="https://asciinema.org/a/636250.svg" /></a>
+### Calculator
+[![Calculator Demo](https://asciinema.org/a/636163.svg)](https://asciinema.org/a/636163)
 
+### GCD
+[![GCD Demo](https://asciinema.org/a/636232.svg)](https://asciinema.org/a/636232)
 
-### Game "Is it a prime number?"
-A random number is shown to user. User
-answers "yes" if the number is prime, or "no" if
-the number is not prime.  
-Game start: ```make brain-prime```
-#### Demonstration: 
-<a href="https://asciinema.org/a/0A1eVHAXCze9Y9ZcqNhMenLrH" target="_blank"><img src="https://asciinema.org/a/0A1eVHAXCze9Y9ZcqNhMenLrH.svg" /></a>
+### Progression
+[![Progression Demo](https://asciinema.org/a/636250.svg)](https://asciinema.org/a/636250)
+
+### Prime
+[![Prime Demo](https://asciinema.org/a/0A1eVHAXCze9Y9ZcqNhMenLrH.svg)](https://asciinema.org/a/0A1eVHAXCze9Y9ZcqNhMenLrH)
+
+## 🤝 Contributing
+
+Pull requests welcome! For major changes, please open an issue first.
+
+## 📜 License
+
+[MIT License](LICENSE)
