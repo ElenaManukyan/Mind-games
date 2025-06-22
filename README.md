@@ -1,7 +1,7 @@
 # Brain Games 🧠🎮
 
 [![CI Status](https://github.com/SierraMoiseevna/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SierraMoiseevna/frontend-project-44/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/6af649e830b701eac8da/maintainability)](https://codeclimate.com/github/SierraMoiseevna/frontend-project-44/maintainability)
+<a href="https://codeclimate.com/github/SierraMoiseevna/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/6af649e830b701eac8da/maintainability" /></a>
 
 A collection of five console math games to train your brain. Each game presents questions that need to be answered correctly. Three correct answers win the game, while a wrong answer ends it.
 
